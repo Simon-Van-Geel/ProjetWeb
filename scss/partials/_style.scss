@@ -1,0 +1,109 @@
+/* Styles du main  */
+
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin : 0 auto;
+}
+
+// Page accueil
+.latest-products,
+.bestsellers,
+.newsletter-signup {
+  margin-bottom: 60px;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: $blue;
+  }
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px $gray-transparent;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: $gray-transparent;
+  }
+
+  p {
+    font-size: 0.9em;
+    color: $white;
+    margin-bottom: 15px;
+  }
+
+  span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $blue;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  button {
+    background-color: $blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $white;
+      color : $light-blue;
+      border : solid 1px $dark-blue;
+    }
+  }
+}
+
+.newsletter-signup {
+  input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    max-width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: $blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($blue, 10%);
+    }
+  }
+}

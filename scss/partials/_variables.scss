@@ -1,0 +1,25 @@
+// Variables
+// Typo
+$typo-main: Raleway, sans-serif;
+$typo-secondary: 'Josefin Sans', sans-serif;
+
+// Colors
+$white:            #fff;
+$blue:             #0A3782;
+$light-blue:       #0096C8;
+$dark-blue :       #001E69;
+$gray-transparent: #7d7c7c73;
+$background:       #fcfcfc;
+
+// Sizes
+$img-portfolio: 100%;
+
+// Responsive
+// Breakpoints
+$medium-size:   768px;
+$large-size:    962px;
+$x-large-size:  1200px;
+// Rules
+$mobile:  'screen and (min-width: #{$medium-size})';
+$tablet:   'screen and (min-width: #{$large-size})';
+$desktop: 'screen and (min-width: #{$x-large-size})';

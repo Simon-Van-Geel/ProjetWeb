@@ -1,0 +1,92 @@
+/* Styles du Footer  */
+
+footer {
+  background-color: $blue;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-columns {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  gap: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  h3 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin-bottom: 10px;
+      a {
+        color: $white;
+        &:hover {
+          color: $light-blue;
+        }
+      }
+    }
+  }
+
+  .social-links {
+    margin-top: 20px;
+    a {
+      display: inline-block;
+      margin-right: 15px;
+      img {
+        width: 24px;
+        height: 24px;
+        filter: invert(1);
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 0.9em;
+}
+
+@media #{$tablet}  {
+  .footer-columns {
+    flex-direction: row;
+    .footer-col {
+      text-align: left;
+      margin-bottom: 30px;
+      h3 {
+        font-size: 1.4em;
+      }
+      ul {
+          font-size : 1.0em;
+        }
+    }
+  }
+}
+
+@media #{$desktop}  {
+  .footer-columns {
+    .footer-col {
+      h3 {
+        font-size: 1.6em;
+      }
+      ul {
+        font-size : 1.2em;
+      }
+    }
+  }
+}

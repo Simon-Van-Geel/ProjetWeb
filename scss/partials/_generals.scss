@@ -1,0 +1,36 @@
+// General css
+
+html {
+  scroll-behavior: smooth;
+   height: 100%;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $blue;
+  background-color: $background;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  background-color: $light-blue;
+  color: white;
+    &:hover {
+      background-color: $white;
+      color : $light-blue;
+    }
+  }
+a {
+  text-decoration: none;
+  color: $white;
+  transition: color 0.3s ease;
+  &:hover {
+    color: $light-blue;
+  }
+}
