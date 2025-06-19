@@ -1,9 +1,9 @@
-/* Styles du Header  */
+// Header
 header {
   background-color: $blue;
 }
 
-/* Navbar  */
+//Navbar
 nav{
   display: flex;
   flex-direction: column;
@@ -130,7 +130,7 @@ nav{
   }
 }
 
-/* Section Hero  */
+// Section Hero
 
 .hero-section {
   min-height: 40vh;

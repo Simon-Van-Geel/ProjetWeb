@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <title>Sacoche</title>
+    <title>PC Express</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 <header>
     <!-- Navbar -->
     <nav>
-        <a href="index.html" class="site-name">Nom du Site</a>
+        <a href="index.html" class="site-name">PC Express</a>
         <ul class="nav-links">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="about.html">A propos</a></li>
@@ -39,90 +39,122 @@
             <a href="#"><i class="icofont-star"></i></a>
         </div>
     </nav>
-    <!-- Hero Section -->
-    <div class="hero-section">
-        <div class="hero-content">
-            <h1>Bienvenue sur notre boutique !</h1>
-            <p>Découvrez notre collection unique de produits</p>
-        </div>
-    </div>
 </header>
 <!-- Main -->
 <main>
-    <section class="shop-products-display">
-        <h2>Nos Articles</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="" alt="Produit 1">
-                <h3>Nom du Produit 1</h3>
-                <p>Description courte du produit.</p>
-                <span>XX,XX €</span>
-                <button>Ajouter au panier</button>
-            </div>
-            <div class="product-card">
-                <img src="" alt="Produit 2">
-                <h3>Nom du Produit 2</h3>
-                <p>Description courte du produit.</p>
-                <span>YY,YY €</span>
-                <button>Ajouter au panier</button>
-            </div>
-            <div class="product-card">
-                <img src="" alt="Produit 3">
-                <h3>Nom du Produit 3</h3>
-                <p>Description courte du produit.</p>
-                <span>ZZ,ZZ €</span>
-                <button>Ajouter au panier</button>
-            </div>
-            <div class="product-card">
-                <img src="" alt="Produit 4">
-                <h3>Nom du Produit 4</h3>
-                <p>Description courte du produit.</p>
-                <span>AA,AA €</span>
-                <button>Ajouter au panier</button>
-            </div>
-            <div class="product-card">
-                <img src="" alt="Produit 5">
-                <h3>Nom du Produit 5</h3>
-                <p>Description courte du produit.</p>
-                <span>BB,BB €</span>
-                <button>Ajouter au panier</button>
-            </div>
-            <div class="product-card">
-                <img src="" alt="Produit 6">
-                <h3>Nom du Produit 6</h3>
-                <p>Description courte du produit.</p>
-                <span>CC,CC €</span>
-                <button>Ajouter au panier</button>
-            </div>
-            <div class="product-card">
-                <img src="" alt="Produit 7">
-                <h3>Nom du Produit 7</h3>
-                <p>Description courte du produit.</p>
-                <span>DD,DD €</span>
-                <button>Ajouter au panier</button>
-            </div>
-            <div class="product-card">
-                <img src="" alt="Produit 8">
-                <h3>Nom du Produit 8</h3>
-                <p>Description courte du produit.</p>
-                <span>EE,EE €</span>
-                <button>Ajouter au panier</button>
-            </div>
-            <div class="product-card">
-                <img src="" alt="Produit 9">
-                <h3>Nom du Produit 9</h3>
-                <p>Description courte du produit.</p>
-                <span>FF,FF €</span>
-                <button>Ajouter au panier</button>
-            </div>
-        </div>
+    <section class="shop-page-container">
+        <h2>Notre Boutique PC Land</h2>
+        <p class="section-description">Découvrez notre vaste sélection de PC, composants et accessoires informatiques.</p>
 
-        <div class="pagination">
-            <a href="#">&laquo; Précédent</a>
-            <a href="#" class="active">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">Suivant &raquo;</a>
+        <div class="shop-content-wrapper">
+            <aside class="sidebar-filters">
+                <h3>Catégories</h3>
+                <ul class="category-list">
+                    <li><a href="shop.html?category=all">Tous les Produits</a></li>
+                    <li><a href="shop.html?category=gaming">PC Gaming</a></li>
+                    <li><a href="shop.html?category=bureautique">PC Bureautique</a></li>
+                    <li><a href="shop.html?category=portables">PC Portables</a></li>
+                    <li><a href="shop.html?category=composants">Composants</a></li>
+                    <li><a href="shop.html?category=accessoires">Accessoires</a></li>
+                    <li><a href="shop.html?category=peripheriques">Périphériques</a></li>
+                </ul>
+
+                <h3>Prix</h3>
+                <div class="price-range">
+                    <input type="range" min="0" max="2500" value="1250" class="slider" id="price-slider">
+                    <p>Prix max: <span id="price-value">1250€</span></p>
+                </div>
+
+                <h3>Marques</h3>
+                <ul class="category-list">
+                    <li><a href="#">Intel</a></li>
+                    <li><a href="#">AMD</a></li>
+                    <li><a href="#">NVIDIA</a></li>
+                    <li><a href="#">Asus</a></li>
+                    <li><a href="#">MSI</a></li>
+                    <li><a href="#">Dell</a></li>
+                </ul>
+            </aside>
+
+            <div class="products-main-content">
+                <div class="sort-options">
+                    <label for="sort-by">Trier par :</label>
+                    <select id="sort-by">
+                        <option value="popularite">Popularité</option>
+                        <option value="prix-asc">Prix (croissant)</option>
+                        <option value="prix-desc">Prix (décroissant)</option>
+                        <option value="nouveaute">Nouveauté</option>
+                        <option value="avis">Avis Clients</option>
+                    </select>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="img/HP250.jpg" alt="PC Gaming Ultra Z">
+                        <h3>PC Gaming Ultra Z10</h3>
+                        <p>AMD Ryzen 7, RTX 4070, 16GB RAM, 1TB SSD.</p>
+                        <span>1499.99 €</span>
+                        <button class="btn">Ajouter au panier</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/HP250.jpg" alt="PC Bureautique Office Pro">
+                        <h3>PC Bureautique Office Pro</h3>
+                        <p>Intel Core i5, 8GB RAM, 512GB SSD, Windows 11 Pro.</p>
+                        <span>749.99 €</span>
+                        <button class="btn">Ajouter au panier</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/HP250.jpg" alt="PC Portable Gaming Slim">
+                        <h3>PC Portable Gaming Slim</h3>
+                        <p>Intel Core i7, RTX 3060, 16GB RAM, 512GB SSD.</p>
+                        <span>1199.99 €</span>
+                        <button class="btn">Ajouter au panier</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/HP250.jpg" alt="Carte Graphique NVIDIA RTX 4070">
+                        <h3>NVIDIA GeForce RTX 4070</h3>
+                        <p>8GB GDDR6X, DLSS 3, Ray Tracing, idéal 1440p.</p>
+                        <span>649.99 €</span>
+                        <button class="btn">Ajouter au panier</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/HP250.jpg" alt="Processeur Intel Core i9">
+                        <h3>Intel Core i9-14900K</h3>
+                        <p>24 Cœurs, 32 Threads, Fréquence Boost 5.8 GHz.</p>
+                        <span>599.99 €</span>
+                        <button class="btn">Ajouter au panier</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/HP250.jpg" alt="Écran Gaming 27 pouces">
+                        <h3>Écran Gaming 27" QHD 165Hz</h3>
+                        <p>IPS, 1ms, G-Sync Compatible, idéal pour l'eSport.</p>
+                        <span>399.99 €</span>
+                        <button class="btn">Ajouter au panier</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/HP250.jpg" alt="Clavier Mécanique RGB">
+                        <h3>Clavier Mécanique HyperX Alloy</h3>
+                        <p>Switches Red, RGB personnalisable, repose-poignets.</p>
+                        <span>129.99 €</span>
+                        <button class="btn">Ajouter au panier</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/HP250.jpg" alt="SSD NVMe 1To">
+                        <h3>SSD NVMe Samsung 990 Pro 1To</h3>
+                        <p>Vitesse de lecture/écriture jusqu'à 7450/6900 MB/s.</p>
+                        <span>149.99 €</span>
+                        <button class="btn">Ajouter au panier</button>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <a href="#">&laquo; Précédent</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Suivant &raquo;</a>
+                </div>
+            </div>
         </div>
     </section>
 </main>
@@ -161,7 +193,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2024 Nom du Site. Tous droits réservés.</p>
+        <p>&copy; 2025 PC Express. Tous droits réservés.</p>
     </div>
 </footer>
 </body>

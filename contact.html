@@ -13,13 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <title>Sacoche</title>
+    <title>PC Express</title>
 </head>
 <body>
 <header>
     <!-- Navbar -->
     <nav>
-        <a href="index.html" class="site-name">Nom du Site</a>
+        <a href="index.html" class="site-name">PC Express</a>
         <ul class="nav-links">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="about.html">A propos</a></li>
@@ -40,48 +40,59 @@
 </header>
 <!-- Main -->
 <main>
-    <section class="contact-info">
-        <h2>Informations de contact</h2>
-        <p>N'hésitez pas à nous joindre par téléphone ou par e-mail.</p>
-        <ul>
-            <li><strong>Adresse:</strong> [Adresse], [Code Postal] [Ville], [Pays]</li>
-            <li><strong>Téléphone:</strong> [Num]</li>
-            <li><strong>Email:</strong> <a href="mailto:contact@votresite.com">contact@site.com</a></li>
-            <li><strong>Heures d'ouverture:</strong> Lun-Ven: 9h-18h</li>
-        </ul>
-    </section>
-    <section class="contact-form-section">
-        <h2>Envoyez-nous un message</h2>
-        <form action="#" method="POST" class="contact-form">
-            <div class="form-group">
-                <label for="firstName">Prénom:</label>
-                <input type="text" id="firstName" name="firstName" required>
+    <section class="contact-us-section">
+        <h2>Contactez-nous</h2>
+        <p class="section-description">Nous sommes là pour répondre à toutes vos questions et vous accompagner.</p>
+
+        <div class="contact-info">
+            <div class="info-card">
+                <i class="icofont-location-pin"></i>
+                <h3>Adresse</h3>
+                <p>123 Rue de l'Exemple</p>
+                <p>1000 Bruxelles, Belgique</p>
             </div>
-            <div class="form-group">
-                <label for="lastName">Nom:</label>
-                <input type="text" id="lastName" name="lastName" required>
+            <div class="info-card">
+                <i class="icofont-phone"></i>
+                <h3>Téléphone</h3>
+                <p>+32 123 456 789</p>
+                <p>Lun-Ven : 9h-18h</p>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="info-card">
+                <i class="icofont-envelope"></i>
+                <h3>Email</h3>
+                <p>contact@votresite.com</p>
+                <p>Réponse sous 24h</p>
             </div>
-            <div class="form-group">
-                <label for="service">Service souhaité:</label>
-                <select id="service" name="service" required>
-                    <option value="">-- Veuillez choisir un service --</option>
-                    <option value="general">Question générale</option>
-                    <option value="support">Support technique</option>
-                    <option value="billing">Facturation</option>
-                    <option value="partnership">Partenariat</option>
-                    <option value="other">Autre</option>
-                </select>
+            <div class="info-card">
+                <i class="icofont-clock-time"></i>
+                <h3>Horaires</h3>
+                <p>Lun-Sam : 9h-19h</p>
+                <p>Dim : Fermé</p>
             </div>
-            <div class="form-group full-width">
-                <label for="comment">Commentaire:</label>
-                <textarea id="comment" name="comment" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Envoyer le message</button>
-        </form>
+        </div>
+
+        <div class="contact-form-wrapper">
+            <h3>Envoyez-nous un message</h3>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom Complet</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Votre Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer le message</button>
+            </form>
+        </div>
     </section>
 </main>
 <!-- Footer -->
@@ -119,7 +130,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2025 PC Land. Tous droits réservés.</p>
+        <p>&copy; 2025 PC Express. Tous droits réservés.</p>
     </div>
 </footer>
 </body>
